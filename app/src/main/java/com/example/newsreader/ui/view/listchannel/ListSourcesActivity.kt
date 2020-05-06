@@ -45,13 +45,11 @@ class ListSourcesActivity : AppCompatActivity(), ListSourcesView {
         setContentView(R.layout.activity_listsources)
 
         init()
-
         presenter.getSources()
     }
 
     private fun init() {
         pbSources = find(R.id.pb_sources)
-
         toolbar = find(R.id.toolbar)
         setSupportActionBar(toolbar)
         supportActionBar?.title = resources.getString(R.string.do_choose_sources)
